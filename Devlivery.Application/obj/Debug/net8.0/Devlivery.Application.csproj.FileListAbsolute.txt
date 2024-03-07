@@ -1,0 +1,12 @@
+C:\Users\AntonioEduardoSilvei\Documents\ProjetoBlocoEngenharia\DevliveryPortfolioPBAPI\devlivery\devlivery.Application\bin\Debug\net8.0\Devlivery.Application.deps.json
+C:\Users\AntonioEduardoSilvei\Documents\ProjetoBlocoEngenharia\DevliveryPortfolioPBAPI\devlivery\Devlivery.Application\bin\Debug\net8.0\Devlivery.Application.dll
+C:\Users\AntonioEduardoSilvei\Documents\ProjetoBlocoEngenharia\DevliveryPortfolioPBAPI\devlivery\Devlivery.Application\bin\Debug\net8.0\Devlivery.Application.pdb
+C:\Users\AntonioEduardoSilvei\Documents\ProjetoBlocoEngenharia\DevliveryPortfolioPBAPI\devlivery\Devlivery.Application\obj\Debug\net8.0\Devlivery.Application.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\AntonioEduardoSilvei\Documents\ProjetoBlocoEngenharia\DevliveryPortfolioPBAPI\devlivery\Devlivery.Application\obj\Debug\net8.0\Devlivery.Application.AssemblyInfoInputs.cache
+C:\Users\AntonioEduardoSilvei\Documents\ProjetoBlocoEngenharia\DevliveryPortfolioPBAPI\devlivery\Devlivery.Application\obj\Debug\net8.0\Devlivery.Application.AssemblyInfo.cs
+C:\Users\AntonioEduardoSilvei\Documents\ProjetoBlocoEngenharia\DevliveryPortfolioPBAPI\devlivery\Devlivery.Application\obj\Debug\net8.0\Devlivery.Application.csproj.CoreCompileInputs.cache
+C:\Users\AntonioEduardoSilvei\Documents\ProjetoBlocoEngenharia\DevliveryPortfolioPBAPI\devlivery\Devlivery.Application\obj\Debug\net8.0\Devlivery.Application.sourcelink.json
+C:\Users\AntonioEduardoSilvei\Documents\ProjetoBlocoEngenharia\DevliveryPortfolioPBAPI\devlivery\Devlivery.Application\obj\Debug\net8.0\Devlivery.Application.dll
+C:\Users\AntonioEduardoSilvei\Documents\ProjetoBlocoEngenharia\DevliveryPortfolioPBAPI\devlivery\Devlivery.Application\obj\Debug\net8.0\refint\Devlivery.Application.dll
+C:\Users\AntonioEduardoSilvei\Documents\ProjetoBlocoEngenharia\DevliveryPortfolioPBAPI\devlivery\Devlivery.Application\obj\Debug\net8.0\Devlivery.Application.pdb
+C:\Users\AntonioEduardoSilvei\Documents\ProjetoBlocoEngenharia\DevliveryPortfolioPBAPI\devlivery\devlivery.Application\obj\Debug\net8.0\ref\Devlivery.Application.dll

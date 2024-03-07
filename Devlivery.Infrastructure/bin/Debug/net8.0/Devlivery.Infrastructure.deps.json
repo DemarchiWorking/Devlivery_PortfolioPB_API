@@ -1,0 +1,47 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v8.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v8.0": {
+      "Devlivery.Infrastructure/1.0.0": {
+        "dependencies": {
+          "Devlivery.Application": "1.0.0",
+          "Devlivery.Domain": "1.0.0"
+        },
+        "runtime": {
+          "Devlivery.Infrastructure.dll": {}
+        }
+      },
+      "Devlivery.Application/1.0.0": {
+        "runtime": {
+          "Devlivery.Application.dll": {}
+        }
+      },
+      "Devlivery.Domain/1.0.0": {
+        "runtime": {
+          "Devlivery.Domain.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "Devlivery.Infrastructure/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Devlivery.Application/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Devlivery.Domain/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}
