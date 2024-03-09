@@ -2,19 +2,87 @@
   {
     "ContainingType": "Program\u002B\u003C\u003Ec__DisplayClass0_0",
     "Method": "\u003C\u003CMain\u003E$\u003Eb__0",
-    "RelativePath": "weatherforecast",
+    "RelativePath": "ambiente",
     "HttpMethod": "GET",
     "IsController": false,
     "Order": 0,
     "Parameters": [],
     "ReturnTypes": [
       {
-        "Type": "WeatherForecast[]",
+        "Type": "Ambiente[]",
         "MediaTypes": [
           "application/json"
         ],
         "StatusCode": 200
       }
     ]
+  },
+  {
+    "ContainingType": "Devlivery.Api.Controllers.ProjetoController",
+    "Method": "CadastrarProjeto",
+    "RelativePath": "CadastrarProjeto",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Devlivery.Api.Controllers.AutenticacaoController",
+    "Method": "RegistroUsuario",
+    "RelativePath": "CadastrarUsuario",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "requisicaoRegistro",
+        "Type": "Devlivery.Api.ValueObject.RegistroRequisicaoModelDTO",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Devlivery.Api.Controllers.AutenticacaoController",
+    "Method": "Listar",
+    "RelativePath": "Listar",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "email",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.List\u00601[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "Devlivery.Api.Controllers.AutenticacaoController",
+    "Method": "LoginUsuario",
+    "RelativePath": "LoginUsuario",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "loginViewModel",
+        "Type": "Devlivery.Api.ValueObject.LoginRequisicaoModelDTO",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
   }
 ]

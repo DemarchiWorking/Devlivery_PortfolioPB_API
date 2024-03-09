@@ -1,11 +1,23 @@
 {
   "Version": 1,
-  "Hash": "RxPy3fSzoaMgE401R0s+hLCUDtx2YTG0zjCG6AlQON8=",
+  "Hash": "AIB+YqT/X5QFaZAz22SncCnevEzgl/QIsYqaqwgOmpE=",
   "Source": "Devlivery.Api",
   "BasePath": "_content/Devlivery.Api",
   "Mode": "Default",
   "ManifestType": "Build",
-  "ReferencedProjectsConfiguration": [],
+  "ReferencedProjectsConfiguration": [
+    {
+      "Identity": "C:\\Users\\AntonioEduardoSilvei\\Documents\\ProjetoBlocoEngenharia\\DevliveryPortfolioPBAPI\\devlivery\\Devlivery.Authentication\\Devlivery.Authentication.csproj",
+      "Version": 2,
+      "Source": "Devlivery.Authentication",
+      "GetPublishAssetsTargets": "ComputeReferencedStaticWebAssetsPublishManifest;GetCurrentProjectPublishStaticWebAssetItems",
+      "AdditionalPublishProperties": "Configuration=Debug;Platform=AnyCPU",
+      "AdditionalPublishPropertiesToRemove": "WebPublishProfileFile;TargetFramework",
+      "GetBuildAssetsTargets": "GetCurrentProjectBuildStaticWebAssetItems",
+      "AdditionalBuildProperties": "Configuration=Debug;Platform=AnyCPU",
+      "AdditionalBuildPropertiesToRemove": "WebPublishProfileFile;TargetFramework"
+    }
+  ],
   "DiscoveryPatterns": [],
   "Assets": []
 }

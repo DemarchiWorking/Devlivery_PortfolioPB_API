@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "5ovKskRunFkTqWZ4iv5D1LKdGkHq55XMGQs3O4yUkhU=",
+  "Source": "Devlivery.Authentication",
+  "BasePath": "_content/Devlivery.Authentication",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}
