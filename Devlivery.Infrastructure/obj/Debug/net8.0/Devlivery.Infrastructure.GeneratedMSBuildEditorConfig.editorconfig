@@ -8,6 +8,6 @@ build_property.PlatformNeutralAssembly =
 build_property.EnforceExtendedAnalyzerRules = 
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = Devlivery.Infrastructure
-build_property.ProjectDir = C:\Users\AntonioEduardoSilvei\Documents\ProjetoBlocoEngenharia\DevliveryPortfolioPBAPI\devlivery\Devlivery.Infrastructure\
+build_property.ProjectDir = C:\Users\AntonioEduardoSilvei\Documents\ProjetoBlocoEngenharia\DevliveryPortfolioPBAPI\devlivery\devlivery.Infrastructure\
 build_property.EnableComHosting = 
 build_property.EnableGeneratedComInterfaceComImportInterop = 

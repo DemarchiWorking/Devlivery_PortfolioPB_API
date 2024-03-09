@@ -12,25 +12,25 @@ namespace Devlivery.Authentication.Controllers
     public class AutenticacaoController : ControllerBase
     {
         private readonly IUsuarioService _usuarioService;
-        private readonly UserManager<AplicacaoUsuario> _gerenciadorUsuario;
-        private readonly SignInManager<AplicacaoUsuario> _gerenciadorAcesso;
+        private readonly UserManager<Usuario> _gerenciadorUsuario;
+        private readonly SignInManager<Usuario> _gerenciadorAcesso;
 
         public AutenticacaoController(
             IUsuarioService usuarioService,
-            UserManager<AplicacaoUsuario> gerenciadorUsuario, 
-            SignInManager<AplicacaoUsuario> gerenciadorAcesso)
+            UserManager<Usuario> gerenciadorUsuario, 
+            SignInManager<Usuario> gerenciadorAcesso)
         {
             _usuarioService = usuarioService;
             _gerenciadorUsuario = gerenciadorUsuario;
             _gerenciadorAcesso = gerenciadorAcesso;
         }
 
-        [HttpPost("registro")]
-        public async Task<IActionResult> RegistroUsuario(RegistroRequisicaoModelDTO model)
+        [HttpPost]
+        public async Task<IActionResult> RegistroUsuarios(RegistroRequisicaoModelDTO model)
         {
-            var usuario = new AplicacaoUsuario 
+            var usuario = new Usuario 
             {   
-                UserName = model.Nome,
+                Nome = model.Nome,
                 Email = model.Email 
             };
 
@@ -47,8 +47,8 @@ namespace Devlivery.Authentication.Controllers
             }
             return BadRequest(resultado.Errors);
         }
-        [HttpPost("login")]
-        public async Task<IActionResult> LoginUsuario(LoginRequisicaoModelDTO model)
+        [HttpGet]
+        public async Task<IActionResult> LoginUsuarios(LoginRequisicaoModelDTO model)
         {
 
             var result = await _gerenciadorAcesso.PasswordSignInAsync(model.Email, model.Senha, model.Relembrar, lockoutOnFailure: false);
@@ -60,9 +60,9 @@ namespace Devlivery.Authentication.Controllers
         }
 
         //public class AutenticacaoController Index(){ return View();}
-        public IActionResult Index()
+        /*public IActionResult Index()
         {
             return null;
-        }
+        }*/
     }
 }

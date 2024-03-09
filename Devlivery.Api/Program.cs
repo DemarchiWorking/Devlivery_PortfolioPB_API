@@ -1,38 +1,37 @@
 using Devlivery.Api;
-using Devlivery.Api.ValueObject;
-using Microsoft.AspNetCore.Identity;
-using Microsoft.AspNetCore.Mvc;
+using Microsoft.OpenApi.Models;
 
 var builder = WebApplication.CreateBuilder(args);
+ConfigurationManager configuracao = builder.Configuration;
+IServiceCollection servicos = builder.Services;
 
-// Add services to the container.
-// Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
-//builder.Services.AddControllers();
-//builder.Services.AddEndpointsApiExplorer();
-//builder.Services.AddSwaggerGen();
-var startup = new Startup(builder.Configuration);
-startup.ConfigureServices(builder.Services);
+builder.Services.AddEndpointsApiExplorer();
+builder.Services.AddSwaggerGen();
+
+Startup startup = new Startup(configuracao, servicos);
+
+servicos = Startup.ConfiguraServicos();
+servicos.AddSwaggerGen(c =>
+{
+    c.SwaggerDoc("v1", new OpenApiInfo { Title = "My API", Version = "v1" });
+});
+
+builder.Services.AddControllers();
+servicos.BuildServiceProvider();
+
 
 var app = builder.Build();
-/*
-// Configure the HTTP request pipeline.
-if (app.Environment.IsDevelopment())
-{
-    app.UseSwagger();
-    app.UseSwaggerUI();
-}*/
 
-app.UseHttpsRedirection();
 
 var summaries = new[]
 {
     "Freezing", "Bracing", "Chilly", "Cool", "Mild", "Warm", "Balmy", "Hot", "Sweltering", "Scorching"
 };
 
-app.MapGet("/ambiente", () =>
+app.MapGet("/weatherforecast", () =>
 {
     var forecast =  Enumerable.Range(1, 5).Select(index =>
-        new Ambiente
+        new Weatherforecast
         (
             DateOnly.FromDateTime(DateTime.Now.AddDays(index)),
             Random.Shared.Next(-20, 55),
@@ -41,13 +40,61 @@ app.MapGet("/ambiente", () =>
         .ToArray();
     return forecast;
 })
-.WithName("GetAmbiente")
+.WithName("Weatherforecast")
 .WithOpenApi();
-
 startup.Configure(app, app.Environment);
 app.Run();
 
-record Ambiente(DateOnly Date, int TemperatureC, string? Summary)
+record Weatherforecast(DateOnly Date, int TemperatureC, string? Summary)
 {
     public int TemperatureF => 32 + (int)(TemperatureC / 0.5556);
 }
+
+
+/*
+ * /Startup.ConfiguraServicos().BuildServiceProvider()/.GetService(typeof(IServiceProvider));
+// Add services to the container.
+// Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
+//builder.Services.AddControllers();
+//builder.Services.AddEndpointsApiExplorer();
+//builder.Services.AddSwaggerGen();
+//services.ConfigureServices(builder.Services);
+//services?.BuildServiceProvider();
+var builder = WebApplication.CreateBuilder(args);
+
+
+// Add services to the container.
+// Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
+
+var startup = new Startup();
+var services = Startup.ConfiguraServicos();
+services.BuildServiceProvider();
+
+//builder.UseStartup<Startup>();
+var app = builder.Build();
+
+// Configure the HTTP request pipeline.
+if (app.Environment.IsDevelopment())
+{
+    app.UseSwagger();
+    app.UseSwaggerUI();
+}
+
+app.UseHttpsRedirection();
+//app.MapIdentityApi<Usuario>();
+var summaries = new[]
+{
+    "Freezing", "Bracing", "Chilly", "Cool", "Mild", "Warm", "Balmy", "Hot", "Sweltering", "Scorching"
+};
+ 
+  
+ 
+ */
+/*
+// Configure the HTTP request pipeline.
+if (app.Environment.IsDevelopment())
+{
+    app.UseSwagger();
+    app.UseSwaggerUI();
+}*/
+

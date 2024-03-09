@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "AIB+YqT/X5QFaZAz22SncCnevEzgl/QIsYqaqwgOmpE=",
+  "Hash": "fvgKb5S7Yz/KsVZbosn2cBh+AGkilkCbwVsuoYvyXTo=",
   "Source": "Devlivery.Api",
   "BasePath": "_content/Devlivery.Api",
   "Mode": "Default",
@@ -11,10 +11,10 @@
       "Version": 2,
       "Source": "Devlivery.Authentication",
       "GetPublishAssetsTargets": "ComputeReferencedStaticWebAssetsPublishManifest;GetCurrentProjectPublishStaticWebAssetItems",
-      "AdditionalPublishProperties": "Configuration=Debug;Platform=AnyCPU",
+      "AdditionalPublishProperties": "",
       "AdditionalPublishPropertiesToRemove": "WebPublishProfileFile;TargetFramework",
       "GetBuildAssetsTargets": "GetCurrentProjectBuildStaticWebAssetItems",
-      "AdditionalBuildProperties": "Configuration=Debug;Platform=AnyCPU",
+      "AdditionalBuildProperties": "",
       "AdditionalBuildPropertiesToRemove": "WebPublishProfileFile;TargetFramework"
     }
   ],

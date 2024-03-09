@@ -1,0 +1,30 @@
+{
+    public class AplicacaoRole : IdentityRole
+    {// Adicione propriedades específicas do papel aqui, se necessário.
+
+        public Guid AplicacaoRoleId { get; set; }
+        public Usuario Usuario { get; set; }
+        public string Descricao { get; set; }
+    }
+}using Microsoft.AspNetCore.Identity;
+    public class Role
+    {
+        public Guid RoleId { get; set; }
+        public string Titulo { get; set; }
+        public string Descricao { get; set; }
+    }
+}
+
+namespace Devlivery.Authentication.Model
+{
+    public class AplicacaoUsuario//: IdentityUser
+    {/* Adicione propriedades específicas do papel aqui, se necessário.
+
+        public Guid AplicacaoUsuarioId { get; set; }
+        public string Nome { get; set; }
+        public string Email { get; set; }
+        public string Senha { get; set; }
+        public string Telefone { get; set; }
+        public Role Role { get; set; } */
+    }
+}
